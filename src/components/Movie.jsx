@@ -3,9 +3,11 @@ import React from 'react'
 const Movie = ({movie}) => {
 
   const imgStyles={
-    height: '360px',
+    height: '340px',
     objectFit: 'cover',
   }
+
+  const isFavorite = true;
 
   return (
     <div className='card'>
@@ -17,7 +19,7 @@ const Movie = ({movie}) => {
       />
       <div>
         <h4>{movie.title}</h4>
-        <button className='btn btn-outline-primary'>
+        <button className={`btn ${isFavorite ? 'btn-sucess' : 'btn-outline-primary'}`}>
           Favorito
         </button>
       </div>

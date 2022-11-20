@@ -7,7 +7,7 @@ const Movie = ({movie}) => {
     objectFit: 'cover',
   }
 
-  const isFavorite = true;
+  const isFavorite = false;
 
   return (
     <div className='card'>
@@ -19,7 +19,7 @@ const Movie = ({movie}) => {
       />
       <div>
         <h4>{movie.title}</h4>
-        <button className={`btn ${isFavorite ? 'btn-sucess' : 'btn-outline-primary'}`}>
+        <button className={`btn ${isFavorite ? 'btn-success' : 'btn-outline-primary'}`}>
           Favorito
         </button>
       </div>

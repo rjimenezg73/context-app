@@ -6,6 +6,8 @@ const NavBar = () => {
   const {user, login, logout} = useContext(UserContext); // El argumento que recibe es el contexto que creamos llamado UserContext.
   // data se refiere a los datos que se envian en el value en App.jsx que básicamente es un objeto, por tanto necesitamos etraer el usuario de ese objeto
  
+  console.log('NavBar');
+
   return (
     <nav className='navbar navbar-dark bg-dark mb-4'>
       <div className='container'>

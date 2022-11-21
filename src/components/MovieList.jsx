@@ -3,6 +3,9 @@ import initialMovies from '../JSON/initialMovies.js';
 import Movie from './Movie.jsx';
 
 const MovieList = () => {
+
+  console.log('MovieLit');
+
   return (
     <div className='container'>
       <div className='row'>

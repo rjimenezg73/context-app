@@ -2,6 +2,8 @@ import React from 'react'
 
 const Movie = ({movie}) => {
 
+  console.log(Movie);
+
   const imgStyles={
     height: '340px',
     objectFit: 'cover',

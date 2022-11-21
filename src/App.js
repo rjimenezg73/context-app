@@ -1,17 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavBar from './components/NavBar.jsx';
 import MovieList from './components/MovieList.jsx';
 import UserContext from './contexts/UserContext.js';
 
-function App() {
-
-  const user = {
+const initialUser = {
     id: 1,
     name: 'Pedrito',
     favoriteMovies: [1, 2, 3]
   }
 
-  const data = { user }
+
+
+function App() {
+
+  const [user, setUser] = useState(initialUser);
+
+  const login = () => {
+    setUser(initialUser);
+  }
+
+  const logout = () => {
+    setUser(null);
+  }
+
+  
+  const data = { user, login, logout }
 
   return (
     <div>
